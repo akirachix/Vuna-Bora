@@ -1,0 +1,419 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face{
+  font-family: Spartanimport;
+  src:url("fonts/spartan/SpartanMB-Bold.otf");
+}
+@font-face{
+  font-family: SpartanLimport;
+  src:url("fonts/spartan/SpartanMB-Black.otf");
+}
+@font-face{
+  font-family: RalewayELimport;
+  src:url("fonts/raleway/Raleway-ExtraLight.ttf");
+}
+@font-face{
+  font-family: Ralewayimport;
+  src:url("Fonts/raleway/Raleway-Black.ttf");
+}
+@font-face{
+  font-family: RalewayBoldimport;
+  src:url("Fonts/raleway/Raleway-Bold.ttf");
+}
+html {
+  scroll-behavior: smooth;
+}
+.header {
+  min-height: 100vh;
+  background: linear-gradient(rgba(13, 13, 13, 0.6), rgba(12, 12, 12, 0.017)),
+    url("svg/maize.jpg") center/cover no-repeat;
+  position: relative;
+  background-attachment: fixed;
+}
+.logo{
+  float:left;
+  width: 15%;
+  height: 15%;
+  padding: 0% 15%;
+  z-index: 10;
+  position: fixed;
+  animation-name: slideleft;
+  -webkit-animation-name: slideleft;
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+}
+.fix {
+  position: fixed;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  width: 100%;
+  z-index: 2;
+  float:left;
+  padding-right: 5%;
+  background: none;
+  animation-name: slidedown;
+  -webkit-animation-name: slidedown;
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+}
+.main{
+  position: absolute;
+}
+.main a {
+  float: right;
+    background: none;
+    padding: 15px;
+    padding-right:2%;
+    letter-spacing: 3px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #f8f9fa;
+    display: inline;
+    text-decoration: none;
+    transition: 0.5s;
+    font-weight: 500;
+    font-size: medium;
+}
+.a1{
+  float: right;
+}
+.a1:hover {
+  color: #23e405;
+}
+.banner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  letter-spacing: 0.5rem;
+}
+.banner-subtitle {
+  margin-top: 2rem;
+  font-size: 2rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: #f8f9fa;
+  animation-name: slideup;
+  -webkit-animation-name: slideup;
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+}
+.banner-title {
+  font-family:SpartanLimport;
+  font-size: 3.5rem;
+  color: white;
+  margin-top: 2.5rem;
+  line-height: 1.3;
+  /* animation */
+  animation-name: slidedown;
+  -webkit-animation-name: slidedown;
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+}
+.banner-bottom {
+  position: absolute;
+  top: 95%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation-name: downarrow;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+ .banner-bottom img{
+  height:40px;
+}
+@keyframes downarrow {
+  0% {
+    top:91%;
+  }
+  50% {
+    top:96%;
+  }
+  100% {
+    top:91%;
+  }
+}
+.work {
+  background: #E0E5EC;
+  display: inline-flex;
+  width:100%;
+  height: 20rem;
+  font-weight: 50%;
+  padding: left 24px; 
+  padding: 30px;
+}
+.work1 {
+  padding: 2.5rem 0;
+  text-align: center;
+  transition: 0.5s;
+  font-size: 15px;
+  width:25%;
+}
+.work2 {
+  padding: 2.5rem 0;
+  text-align: center;
+  transition: 0.5s;
+  width:25%;
+}
+.work-title {
+  font-size: 0.9rem;
+  font-weight: bold;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1em;
+  margin-bottom: 1.5rem;
+  color: #3aef11;
+  transition: 0.5s;
+}
+.work-text {
+  max-width: 13rem;
+  margin: 0 auto;
+  text-shadow: 10px;
+  font-family: RalewayELimport;
+  font-weight: lighter;
+}
+.work:hover {
+  background:#15d004;
+  opacity: 1.2;
+  border-bottom-left-radius: 40px;
+  border-top-right-radius: 40px;
+}
+.work2:hover {
+  background: #15d004;
+  opacity: 1.2;
+  border-bottom-left-radius: 40px;
+  border-top-right-radius: 40px;
+}
+.work1:hover .skill-title {
+  color: #15d004;
+  font-size: 17px;
+}
+.work2:hover .skill-title {
+  color: #15d004;
+  font-size: 17px;
+}
+.work1:hover .skill-text {
+  color: rgb(255, 255, 255);
+}
+.work2:hover .skill-text {
+  color: white;
+}
+.about-img-1,
+.about-info-1 {
+  float: left;
+  width: 50%;
+  padding: 5rem;
+  background-color: #E0E5EC;
+  padding: 1rem;
+}
+.about-text {
+  margin: 1rem 0;
+  max-width: 26rem;
+  max-height: -30rem;
+  color: black;
+  font-family: RalewayELimport; 
+  font-weight: lighter;
+}
+.about{
+  background-color: #E0E5EC;
+  height: -50rem;
+}
+.section-subtitle{
+  color: #15d004;
+  font-family: SpartanLimport;
+  font-size: 40px;
+  text-align: left;
+}
+.section-title{
+  font-family: SpartanLimport;
+}
+.menu-template{
+  height: 40vh;
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)),
+    url("svg/maize.jpg") center/cover no-repeat;
+  position: relative;
+  background-attachment: fixed;
+  height: 15rem;
+}
+.menu-title {
+  font-family: SpartanLimport;
+  color:#15d004;
+  margin-top: 2.5rem;
+  line-height: 1.3;
+  text-align: center;
+  padding-top: 6.5%;
+  font-size: 30px;
+}
+.menu-sectiontitle{
+  padding-left: 2rem;
+  padding-top: 2rem;
+  font-family: SpartanLimport;
+  color:#15d004 ;
+}
+.menu-describe{
+  padding-left: 2rem;
+  padding-top: 1rem;
+  color: black;
+  font-size: 18px;
+  line-height: 1.5;
+}
+.menu-subtitle {
+  text-transform: uppercase;
+  font-family: SpartanLimport;
+  color:white;
+  font-size: 40px;
+}
+.menu-section{
+  float: left;
+  /* background-color: #fbfbfc; */
+  width: 20%;
+  padding: 2rem;  
+  height: 420px;
+  z-index: 2;
+  margin-left: 3%;
+
+  padding-right: 5rem;
+}
+.menu-flip-card {
+  background-color: transparent;
+  width: 90%;
+  height: 80%;
+  perspective: 1000px;
+  z-index: 3;
+}
+.menu-flip-card-inner {
+  position: relative;
+  width: 200%;
+  height: 120%;
+  text-align: center;
+  transition: transform 0.5s;
+  transform-style: preserve-3d;
+  /* box-shadow: 9px 9px 16px rgba(248, 249, 250, 0.952), -9px -9px 16px    rgba(239, 228, 228, 0.5); */
+  border-radius: 5%;
+  background: none;
+}
+.menu-flip-card:hover .menu-flip-card-inner {
+  transform: rotateY(180deg);
+}
+.menu-flip-card-front, .menu-flip-card-back {
+  position: absolute;
+  width: 120%;
+  height: 100%;
+  backface-visibility: hidden;
+  align-self: center;
+}
+.menu-flip-card-front {
+  background: #f5f6f6;
+  color: black;
+}
+.menu-flip-card-back {
+  background-color: #ffffff;
+  color: white;
+  transform: rotateY(180deg);
+  border-radius: 5%;
+}
+.menu-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.menu-text-title{
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color:#15d004;
+}
+.menu-hr {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border: 0;
+  border-color: black;
+}
+.menu-image{
+  width:80%;
+  height:80%;
+  border-radius: 4%;
+}
+.social{
+  float: left;
+  padding:0;
+  margin: 0;
+  margin-left:220px;
+}
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
+.footer-distributed {
+  background-color: #535853;
+  box-shadow: 0 1px 1px 0 rgba(218, 213, 213, 0.862);
+  box-sizing: border-box;
+  width: 100%;
+  text-align: right;
+  font: normal 16px sans-serif;
+  padding: 60px 60px;
+  color: #ffff;
+  display: flex;
+}
+
+p {
+  font-size:20px;
+  font-weight:bold;
+}
+.howitworks{
+  text-align: center;
+  margin-top: 10%;
+  font-weight: bolder;
+  color: #15d004;
+  font-family: SpartanLimport;
+  font-size: 40px;
+  
+}
+.footer{
+    background: #333;
+    text-align: center;
+    color: #B2B2B2;
+    font-size: 1,3rem;
+}
+.footer .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 2fr));
+    color:#b2b2b2 ;
+    grid-gap: 1rem;
+    padding: 4rem 0;
+    border-bottom: 1px solid #B2B2B2;
+}
+.footer .container div{
+    padding: 0 7rem;
+}
+.footer .container h3{
+    color: #fff;
+    font-size: 1.5rem;
+    padding-bottom:  .8rem;
+}
+.footer .container input{
+    width: 100%;
+    border: 1px solid #B2B2B2;
+    padding: .5rem .6rem;
+    background: transparent;
+    border-radius: 20px;
+}
+.footer .container ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+}
+.footer .container ul li a{
+    color: #B2B2B2;
+    margin-left: 10px;
+    font-size: 18px;
+}
+.footer .container span{
+    display: block;
+}
+
+
+ 
