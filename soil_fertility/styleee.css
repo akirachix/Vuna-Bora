@@ -32,6 +32,7 @@ html {
     url("svg/maize.jpg") center/cover no-repeat;
   position: relative;
   background-attachment: fixed;
+  
 }
 .logo{
   float:left;
@@ -199,6 +200,10 @@ html {
 }
 .work2:hover .skill-text {
   color: white;
+}
+.about-img-1{
+  width: 100%;
+  height: 0rem;
 }
 .about-img-1,
 .about-info-1 {
