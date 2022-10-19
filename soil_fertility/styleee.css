@@ -28,13 +28,20 @@ html {
 }
 .header {
   min-height: 100vh;
-  background: linear-gradient(rgba(13, 13, 13, 0.6), rgba(12, 12, 12, 0.017)),
+  background-color: #15d004;
+  background: linear-gradient(rgba(0, 0, 0, 0.6),rgba(16, 17, 16, 0.6)),
     url("svg/maize.jpg") center/cover no-repeat;
   position: relative;
   background-attachment: fixed;
   
 }
 .logo{
+  width: 46px;
+  margin-left: 0.5rem;
+  height: 46px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-top: -2.5rem; 
   float:left;
   width: 15%;
   height: 15%;
@@ -44,16 +51,17 @@ html {
   animation-name: slideleft;
   -webkit-animation-name: slideleft;
   animation-duration: 1s;
-  -webkit-animation-duration: 1s;
-}
+  -webkit-animation-duration: 1s; 
+} 
 .fix {
   position: fixed;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   width: 100%;
+  height: 4rem;
   z-index: 2;
   float:left;
   padding-right: 5%;
-  background: none;
+  background: #676464;
   animation-name: slidedown;
   -webkit-animation-name: slidedown;
   animation-duration: 1s;
@@ -61,10 +69,11 @@ html {
 }
 .main{
   position: absolute;
+ 
 }
 .main a {
   float: right;
-    background: none;
+    background:none;
     padding: 15px;
     padding-right:2%;
     letter-spacing: 3px;
@@ -292,15 +301,15 @@ html {
 }
 .menu-flip-card {
   background-color: transparent;
-  width: 90%;
-  height: 80%;
+  width: 100%;
+  height: 100%;
   perspective: 1000px;
   z-index: 3;
 }
 .menu-flip-card-inner {
   position: relative;
-  width: 200%;
-  height: 120%;
+  width: 150%;
+  height: 100%;
   text-align: center;
   transition: transform 0.5s;
   transform-style: preserve-3d;
@@ -314,7 +323,7 @@ html {
 .menu-flip-card-front, .menu-flip-card-back {
   position: absolute;
   width: 120%;
-  height: 100%;
+  height: 80%;
   backface-visibility: hidden;
   align-self: center;
 }
@@ -348,8 +357,8 @@ html {
   border-color: black;
 }
 .menu-image{
-  width:80%;
-  height:80%;
+  width:100%;
+  height:100%;
   border-radius: 4%;
 }
 .social{
