@@ -375,15 +375,15 @@ p {
   font-size:20px;
   font-weight:bold;
 }
-/* .section-howitworks p{
+.section-howitworks p{
   text-align: center;
-  margin-bottom: 90%;
+  margin-bottom: 40%;
   font-weight: bolder;
   color: #15d004;
   font-family: SpartanLimport;
   font-size: 40px;
   
-} */
+}
 .footer{
     background: #333;
     text-align: center;
@@ -441,3 +441,9 @@ p {
   font-weight: lighter;
 }
  
+.words h4{
+  color:#15d004;
+  margin-top: 2rem;
+  font-size: 20px;
+
+}
